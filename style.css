@@ -1,0 +1,498 @@
+/*
+ * Theme Name:    Hope 2018
+ * Author:        Luke Godfrey
+ * Version:        0.0.0
+ */
+
+/* Color Scheme:
+ * Logo Brown = #533115
+ * Logo Green = #336633
+ * Lite Green = #74A974
+ * Dark Green = #0B3F0B
+ */
+
+*
+{
+    box-sizing: border-box;
+}
+
+html
+{
+    -webkit-text-size-adjust: 100%
+}
+
+a
+{
+    text-decoration: none;
+    color: #74A974;
+    transition: color 0.5s;
+}
+
+a:hover
+{
+    color: #0B3F0B;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background: #336633;
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    font-family: "Lato", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.utility-links
+{
+    background: #74a974;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.utility-links nav
+{
+    flex: 0 1 1024px;
+}
+
+.utility-links ul
+{
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0 -1em;
+    padding: 0;
+}
+
+.utility-links a
+{
+    color: #fff;
+    padding: 0 1em;
+}
+
+.utility-links a:hover
+{
+    text-decoration: underline;
+}
+
+.main-header
+{
+    display: flex;
+    justify-content: center;
+    padding: 1em 1em;
+    background: #fff;
+}
+
+.main-header-inner
+{
+    flex: 0 1 1024px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.main-menu ul
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 -1em;
+    padding: 0;
+    flex-grow: 1;
+}
+
+.main-menu li
+{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.main-menu a
+{
+    color: #000;
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+    transition: color .25s ease;
+    padding: 0 1em;
+}
+
+.main-menu a:hover
+{
+    color: #74a974;
+}
+
+.crumbs
+{
+    background: #fff;
+    color: #533115;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.crumbs nav
+{
+    flex: 0 1 1024px;
+}
+
+.crumbs ul
+{
+    display: flex;
+    list-style: none;
+    margin: 0 -1em;
+    padding: 0;
+}
+
+.crumbs a
+{
+    color: #533115;
+    padding: 0 1em;
+}
+
+.crumbs a:hover
+{
+    text-decoration: underline;
+}
+
+.crumbs span
+{
+    position: relative;
+    top: -1px;
+}
+
+.crumbs .dashicons
+{
+    top: -2px;
+    text-decoration: none;
+}
+
+.featured-image-wrapper
+{
+    width: 100%;
+    height: 300px;
+    background: #fff;
+}
+
+.featured-image
+{
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.featured-image img
+{
+    width: 100%;
+}
+
+.main
+{
+    padding: 1em 1em 0 1em;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background: #fff;
+}
+
+.main .content
+{
+    font-size: 1.25em;
+}
+
+.main-inner
+{
+    flex: 0 1 1024px;
+}
+
+.main.front-page .widgets
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 -0.5em;
+}
+
+.main.front-page .widgets .widget
+{
+    flex: 1 0 300px;
+    margin: 0 0.5em 1em 0.5em;
+}
+
+.main.front-page .widgets .widget a
+{
+    display: block;
+    color: #999;
+}
+
+.main.front-page .widgets .widget .dashicons
+{
+    transition: inherit;
+}
+
+.main.front-page .widgets .widget a:hover
+{
+    color: #000;
+}
+
+.main.front-page .widgets .widget h3
+{
+    text-align: center;
+    padding-bottom: 0.5em;
+    border-bottom: 1px solid #ddd;
+}
+
+.main h1
+{
+    font-size: 1.6em;
+    margin-bottom: 0.625em;
+}
+
+.main h2
+{
+    font-size: 1.25em;
+    margin-bottom: 0.8em;
+}
+
+.main h3
+{
+    font-size: 1em;
+    margin-bottom: 1em;
+}
+
+.footer-clip
+{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.main-footer
+{
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    padding: 1em 1em 0 1em;
+    overflow: hidden;
+    background: #74a974;
+}
+
+.main-footer a
+{
+    color: #fff;
+}
+
+.main-footer a:hover
+{
+    text-decoration: underline;
+}
+
+.main-footer-inner
+{
+    flex: 0 1 1024px;
+}
+
+.main-footer .widgets
+{
+    margin: 0 -0.5em;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+
+.main-footer .widget
+{
+    margin: 0 0.5em 1em 0.5em;
+    flex: 1 1 300px;
+}
+
+.main-footer .widget h3
+{
+    margin-bottom: 0.5em;
+}
+
+.sitemap-and-copyright
+{
+    color: #fff;
+    padding: 0.5em 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.sitemap-and-copyright.with-sidemap
+{
+    padding-top: 1em;
+}
+
+.sitemap-and-copyright-inner
+{
+    flex: 0 1 1024px;
+}
+
+.sitemap-and-copyright nav > ul
+{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0 -0.5em;
+    padding: 0;
+}
+
+.sitemap-and-copyright nav > ul > li
+{
+    margin: 0 0.5em 1em 0.5em;
+    flex: 1 0 150px;
+}
+
+.sitemap-and-copyright nav > ul > li > a
+{
+    color: #fff;
+    font-family: "Lato", sans-serif;
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+    display: block;
+}
+
+.sitemap-and-copyright nav > ul ul
+{
+    margin: 0 0 -0.25em 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sitemap-and-copyright nav > ul ul a:hover
+{
+    color: #fff;
+}
+
+.sitemap-and-copyright nav > ul ul li
+{
+    margin-bottom: 0.25em;
+}
+
+.copyright.with-sidemap
+{
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding-top: 0.5em;
+}
+
+.widget h3
+{
+    font-family: "Lato", sans-serif;
+    font-size: 1.25em;
+    margin-bottom: 0.5em;
+}
+
+.widget h4
+{
+    color: #ddd;
+    font-weight: normal;
+}
+
+.hope-image-link
+{
+    width: 100%;
+    margin: 1em 0;
+}
+
+.hope-image-link a
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 120px;
+    overflow: hidden;
+}
+
+.hope-image-link div
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    transition: 0.5s background-color;
+}
+
+.hope-image-link a:hover div
+{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.hope-image-link img
+{
+    width: 100%;
+}
+
+.hope-image-link span
+{
+    color: #fff;
+    font-size: 2em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    text-shadow: 2px 2px 2px #000;
+}
+
+.hope-accordion
+{
+    margin: 1.25em 0;
+}
+
+.hope-accordion p:first-child
+{
+    margin-top: 0;
+}
+
+.hope-accordion > div > *
+{
+    margin-left: 1em;
+}
+
+.hope-accordion h2, .hope-accordion h3
+{
+    cursor: pointer;
+    color: #74A974;
+}
+
+.hope-accordion h2:hover, .hope-accordion h3:hover
+{
+    color: #0B3F0B;
+}
+
+@media only screen and (max-width: 480px)
+{
+    .main-header-inner > *
+    {
+        flex: 0 0 100%;
+        text-align: center;
+    }
+
+    .main-menu li
+    {
+        flex: 0 0 100%;
+        text-align: center;
+        margin-top: 1em;
+    }
+
+    .main-footer .widget
+    {
+        margin-bottom: 3em;
+    }
+
+    .main-footer-inner
+    {
+        margin-bottom: -2em;
+    }
+}
